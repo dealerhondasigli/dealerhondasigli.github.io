@@ -30,14 +30,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/js/script.js":
-/*!**************************!*\
-  !*** ./src/js/script.js ***!
-  \**************************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @splidejs/splide */ \"./node_modules/@splidejs/splide/dist/js/splide.esm.js\");\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_splidejs_splide__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start();\n\nlet element;\nelement = document.getElementById('banner');\nif (typeof(element) != 'undefined' && element != null) {\n    new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_1___default())('#banner', {\n        type: 'fade',\n        rewind: true,\n        speed: 2400,\n        fixedHeight: '42%',\n        perPage: 1,\n        autoplay: true,\n        arrows: true,\n        pagination: true,\n        cover: true\n    }).mount();\n}\n\n//# sourceURL=webpack://app/./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _splidejs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./splidejs.js */ \"./src/js/splidejs.js\");\n\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start();\n\n\n\n//# sourceURL=webpack://app/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/splidejs.js":
+/*!****************************!*\
+  !*** ./src/js/splidejs.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ \"./node_modules/@splidejs/splide/dist/js/splide.esm.js\");\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_splidejs_splide__WEBPACK_IMPORTED_MODULE_0__);\n\n\nlet splideElements = document.getElementsByClassName('splide');\nif (splideElements.length > 0) {\n    for (var i = 0, len = splideElements.length; i < len; i++) {\n        new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())(splideElements[i], {\n            perPage: 1,\n            autoplay: true,\n            rewind: true\n        }).mount();\n    }\n}\n\n//# sourceURL=webpack://app/./src/js/splidejs.js?");
 
 /***/ })
 
@@ -125,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpi
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/script.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/index.js");
 /******/ 	
 /******/ })()
 ;
