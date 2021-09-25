@@ -63,9 +63,9 @@
                         </a>
                     </li>
 
-                    <li><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 pb-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></li>
                     <li><a class="text-sm hover:text-red-600" href="motor-index.html">Sepeda Motor</a></li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 pb-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></li>
                     <li><span class="text-sm font-semibold">Beat CBS-ISS</span></li>
                 </ul>
             </nav>
@@ -98,7 +98,7 @@
                 </div>
 
                 <!-- variant -->
-                <section class="bg-gray-100 px-8 py-6 mt-24">
+                <section class="bg-gray-100 py-6 mt-24">
                     <div class="splide" data-splide='{"type": "loop" }'>
                         <div class="splide__track">
                             <div class="splide__list">
@@ -121,7 +121,7 @@
                 <section class="mt-24">
                     <div x-data="{ 'currentTab': 'mesin' }">
                         <!-- tab button -->
-                        <div class="flex items-start space-x-6">
+                        <div class="flex flex-col items-start space-y-2 md:flex-row md:space-y-0 md:space-x-6">
                             <div class="relative"><button @click="currentTab = 'mesin'" :class="currentTab === 'mesin' ? 'text-red-600 border-gray-600' : ''" class="text-xs font-black uppercase text-left text-gray-500 border-b-2 border-transparent hover:border-gray-600">Mesin</button></div>
                             <div class="relative"><button @click="currentTab = 'rangka'" :class="currentTab === 'rangka' ? 'text-red-600 border-gray-600' : ''" class="text-xs font-black uppercase text-left text-gray-500 border-b-2 border-transparent hover:border-gray-600">Rangka & Kaki-kaki</button></div>
                             <div class="relative"><button @click="currentTab = 'dimensi'" :class="currentTab === 'dimensi' ? 'text-red-600 border-gray-600' : ''" class="text-xs font-black uppercase text-left text-gray-500 border-b-2 border-transparent hover:border-gray-600">Dimensi & Berat</button></div>
